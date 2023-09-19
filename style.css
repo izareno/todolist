@@ -1,0 +1,21 @@
+body {
+    font-family: 'Space Grotesk';
+    font-size: 22px;
+    background-color: darkslategrey;
+    color: lightgrey;
+}
+
+table {
+    margin:auto;
+    width: 500px;
+    background-color: seagreen;
+}
+
+.material-icons {
+    vertical-align:text-top;
+}
+
+.added-item {
+    width: 80%;
+    vertical-align: top;
+}

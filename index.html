@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>to do list</title>
+<link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="style.css">
+<script src="func.js"></script>
+</head>
 <body>
 
-<h2 style="text-align:center;">"Unordered List with Circle Bullets</h2>
+<h1 style="text-align:center;">to-do list</h1>
 
-<ul style="list-style-type:circle;">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>  
+<form style="text-align:center;">
+  <label for="to-do-entry">add list item:</label>
+  <input type="text" id="to-do-entry" name="to-do-entry">
+  <input type="submit" value="submit">
+</form>
+
+<br>
+
+<table>
+  <tr>
+    <td class="urgency-button"><i class="material-icons">check_box_outline_blank</i></td>
+    <td class="added-item">coffee</td>
+    <td><i class="material-icons">add</i></td>
+    <td><i class="material-icons">delete</i></td>
+  </tr>
+  <tr>
+    <td class="urgency-button"><i class="material-icons">check_box_outline_blank</i></td>
+    <td class="added-item">tea</td>
+    <td><i class="material-icons">add</i></td>
+    <td><i class="material-icons">delete</i></td>
+  </tr>
+</table>
 
 </body>
 </html>
