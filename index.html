@@ -3,7 +3,6 @@
 <head>
 <title>to do list</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -19,6 +18,17 @@
       - celebratory recognition
       - allow users to define subtasks
 -->
+      <select id="urgency" name="urgency">
+        <optgroup label="select urgency"></optgroup>
+        <option value="urgent">urgent</option>
+        <option value="not urgent">not urgent</option>
+      </select>
+
+      <select id="importance" name="importance">
+        <optgroup label="select importance"></optgroup>
+        <option value="important">important</option>
+        <option value="unimportant">not important</option>
+      </select>
 
       <button onclick="addTask()" class="addButton">add</button>
     </div>

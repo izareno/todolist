@@ -11,7 +11,7 @@
 }
 .to-do-app{
     width: 100%;
-    max-width: 640px;
+    max-width: 840px;
     background: white;
     margin: 100px auto 20px;
     padding: 40px 30px 30px;
@@ -29,7 +29,13 @@
 }
 #dueDate{
     height: 30px;
-    width: 130px;
+    width: 120px;
+}
+#urgency{
+    height: 30px;
+}
+#importance{
+    height: 30px;
 }
 .row {
     text-align: center;
@@ -42,7 +48,8 @@ ul li{
     list-style: none;
     font-size: 17px;
     user-select: none;
-    padding: 12px 8px 12px 50px;
+    padding: 16px 8px 12px 50px;
+    vertical-align: middle;
     cursor: pointer;
     position: relative;
 }
@@ -82,9 +89,25 @@ ul li span{
 ul li dd{
     position: absolute;
     top: 5px;
-    left: 300px;
+    left: 290px;
     line-height: 40px;
     text-align: center;
+}
+
+ul li urg{
+    position: absolute;
+    top: 5px;
+    right: 275px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+ul li imp{
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    line-height: 40px;
+    text-align: justify;
 }
 
 ul li span:hover {
