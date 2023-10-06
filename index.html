@@ -5,34 +5,31 @@
 <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="style.css">
-<script src="func.js"></script>
+
 </head>
 <body>
 
-<h1 style="text-align:center;">to-do list</h1>
+<div class="container">
+  <div class="to-do-app">
+    <h2>to do list</h2>
+    <br>
+    <div class="row">
+      <input type="text" id="input-box" placeholder="E.g. finish homework, laundry">
+      <input type="date" id="dueDate" name="due Date">
 
-<form style="text-align:center;">
-  <label for="to-do-entry">add list item:</label>
-  <input type="text" id="to-do-entry" name="to-do-entry">
-  <input type="submit" value="submit">
-</form>
+<!--  - add the color input field representing the urgency
+      - celebratory recognition
+      - allow users to define subtasks
+-->
 
-<br>
+      <button onclick="addTask()" class="addButton">add</button>
+    </div>
+    <br>
+    <ul id="list-container">
+    </ul>
+  </div>
 
-<table>
-  <tr>
-    <td class="urgency-button"><i class="material-icons">check_box_outline_blank</i></td>
-    <td class="added-item">coffee</td>
-    <td><i class="material-icons">add</i></td>
-    <td><i class="material-icons">delete</i></td>
-  </tr>
-  <tr>
-    <td class="urgency-button"><i class="material-icons">check_box_outline_blank</i></td>
-    <td class="added-item">tea</td>
-    <td><i class="material-icons">add</i></td>
-    <td><i class="material-icons">delete</i></td>
-  </tr>
-</table>
-
+</div>
+<script src="func.js"></script>
 </body>
 </html>
