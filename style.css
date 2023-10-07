@@ -1,12 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Space Grotesk';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 30px;
 }
 .container{
     width: 100%;
     min-height: 100vh;
-    background: lightgreen;
+    background: rgba(57, 11, 142, 0.277);
     padding: 10px;
 }
 .to-do-app{
@@ -16,26 +19,33 @@
     margin: 100px auto 20px;
     padding: 40px 30px 30px;
     border-radius: 10px;
+    border-style:ridge;
+    border-width: 5px;
 }
 .addButton{
-    height: 35px;
+    height: 40px;
     width: 100px;
-    border-radius: 0%;
+    border-radius: 10px;
+    background: darkslateblue;
+    color: white;
+    text-decoration: double;
 }
 #input-box{
     height: 30px;
     width: 290px;
     text-indent: 10px;
+    border-radius: 4%;
 }
 #dueDate{
     height: 30px;
     width: 120px;
+    border-radius: 5%;
 }
 #urgency{
-    height: 30px;
+    height: 35px;
 }
 #importance{
-    height: 30px;
+    height: 35px;
 }
 .row {
     text-align: center;
@@ -70,6 +80,7 @@ ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
+
 ul li.checked::before{
     background-image: url(checkboxFilled.png);
 }
@@ -89,7 +100,7 @@ ul li span{
 ul li dd{
     position: absolute;
     top: 5px;
-    left: 290px;
+    left: 268px;
     line-height: 40px;
     text-align: center;
 }
@@ -97,17 +108,23 @@ ul li dd{
 ul li urg{
     position: absolute;
     top: 5px;
-    right: 275px;
+    left: 435px;
     line-height: 40px;
-    text-align: justify;
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 5%;
+    color: white;
 }
 
 ul li imp{
     position: absolute;
     top: 5px;
-    right: 100px;
+    left: 630px;
     line-height: 40px;
-    text-align: justify;
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 5%;
+    color: white;
 }
 
 ul li span:hover {

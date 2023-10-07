@@ -4,8 +4,6 @@ const dueDate = document.getElementById("dueDate");
 const urgency = document.getElementById("urgency");
 const importance = document.getElementById("importance");
 
-// add color change depending on the value of urg and imp
-
 
 function addTask(){
     if(inputBox.value === ''){
@@ -17,9 +15,19 @@ function addTask(){
         listContainer.appendChild(li);
         let urg = document.createElement("urg");
         urg.innerHTML = urgency.value;
+        var urgy=document.getElementById("urg");
+        if (urg.innerHTML === "urgent") {
+            urg.style.backgroundColor="red";
+        }
+        else {urg.style.backgroundColor="green";}
         li.appendChild(urg);
         let imp = document.createElement("imp");
         imp.innerHTML = importance.value;
+        var impo=document.getElementById("imp");
+        if (imp.innerHTML === "important") {
+            imp.style.backgroundColor="red";
+        }
+        else {imp.style.backgroundColor="green";}
         li.appendChild(imp);
         let dd = document.createElement("dd");
         dd.innerHTML = dueDate.value;
@@ -29,17 +37,16 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = "";
+    dueDate.value = "";
 }
 
-// add subtasks
-
-
-
-// add celebration effect
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
+        if(e.target.className == "checked") {
+            alert("Woo!");
+        }
     }
     else if(e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
